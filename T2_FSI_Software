@@ -1,0 +1,305 @@
+        \documentclass{beamer}
+        \usepackage[utf8]{inputenc}
+    
+        \usepackage{utopia} %font utopia imported
+    
+        \usetheme{Madrid}
+        \usecolortheme{default}
+    
+        %------------------------------------------------------------
+        %This block of code defines the information to appear in the
+        %Title page
+        \title[Software] %optional
+        {Software}
+    
+        \subtitle{Softwares de sistemas e de aplicação}
+    
+        \author[Grupo 2]
+        {Filipe Camuso \and Silviane Brito \and Otávio Sessa \and Victor Augusto \and João Carlos \and Vinicius Gabriel \and Imael Rennan \and Mateus Monteiro}
+    
+        \institute[UFMS-CPAN] % (optional)
+        {
+          Universidade Federal do Mato-Grosso do Sul - Campus Pantanal\\
+        }
+    
+        \date{Março 2018}
+    
+        %End of title page configuration block
+        %------------------------------------------------------------
+    
+    
+    
+        %------------------------------------------------------------
+        %The next block of commands puts the table of contents at the 
+        %beginning of each section and highlights the current section:
+    
+        \AtBeginSection[]
+        {
+          \begin{frame}
+            \frametitle{Conteúdos}
+            \tableofcontents[currentsection]
+          \end{frame}
+        }
+        %------------------------------------------------------------
+    
+    
+        \begin{document}
+    
+        %The next statement creates the title page.
+        \frame{\titlepage}
+    
+    
+        %---------------------------------------------------------
+        %This block of code is for the table of contents after
+        %the title page
+        \begin{frame}
+        \frametitle{Conteúdos}
+    
+        \tableofcontents
+    
+        \end{frame}
+        %---------------------------------------------------------
+    
+    
+        \section{UMA VISÃO GERAL DE SOFTWARE}
+    
+        %---------------------------------------------------------
+        %Changing visivility of the text
+        \begin{frame}
+        \frametitle{UMA VISÃO GERAL DE SOFTWARE}
+        O software consiste em programas de computador que controlam os trabalhos do hardware. \pause
+    
+        \begin{itemize}
+            \item<1-> {Programas de computador} são sequências de instruções para o computador;
+            \item<2-> {Documentação} descreve as funções do programa;
+        \end{itemize}
+        \end{frame}
+        %---------------------------------------------------------
+        \section{SOFTWARE DE SISTEMAS}
+        %---------------------------------------------------------
+    
+        \begin{frame}
+        \frametitle{Sistemas operacionais}
+        Um sistema operacional(SO) é um conjunto de programas que controla o hardware e age como interface com os aplicativos.\pause
+        \begin{itemize}
+            \item<1-> {Um único computador com um único usuário}; \pause
+            \item<2-> {Um único computador com múltiplos usários};  \pause
+            \item<3-> {Múltiplos computadores};  \pause
+            \item<4-> {Computadores de uso específico}; 
+        \end{itemize}
+    
+        \end{frame}
+    
+        \begin{frame}
+    
+        \frametitle{Sistemas operacionais}
+        O conjunto de programas que compõe o sistema operacional desempenha uma variedade de atividades, incluindo:\pause
+        \begin{itemize}
+            \item<1-> {Executar funções comuns de hardware};\pause
+            \item<2-> {Fornecer interface de usuários e gerenciamento de entrada/saída};\pause
+            \item<3-> {Fornecer grau de independência de hardware};\pause
+            \item<4-> {Gerenciar o sistema de memória};\pause
+            \item<5-> {Gerenciar as tarefas de processamento};\pause
+            \item<6-> {Fornecer recursos de rede};\pause
+            \item<7-> {Controlar acesso aos recursos do sistema};\pause
+            \item<8-> {Gerenciar arquivos};
+        \end{itemize}
+    
+        \end{frame}
+        %---------------------------------------------------------
+        \begin{frame}
+        \frametitle{Sistemas operacionais para grupo de trabalho}
+    Os sistemas operacionais mais conhecidos são:\pause
+        \begin{itemize}
+            \item<1-> {Windows Server} \pause
+            \item<2-> {UNIX}\pause
+            \item<3-> {NetWare}\pause
+            \item<4-> {Red Hat Linux}\pause
+            \item<5-> {Mac OS X Server}
+            \end{itemize}
+        \end{frame}
+        %---------------------------------------------------------
+    
+        \begin{frame}
+        \frametitle{Sistemas operacionais para empresa}
+    Os sistemas operacionais para empresas mais conhecidos são:\pause
+        \begin{itemize}
+            \item<1-> {z/OS} \pause
+            \item<2-> {HP-UX}\pause
+            \item<3-> {Linux}
+        \end{itemize}
+        \end{frame}
+        %---------------------------------------------------------
+    
+        \begin{frame}
+        \frametitle{Sistemas operacionais para pequenos computadores, computadores embutidos e dispositivos de uso especial}
+        Alguns dos sistemas operacionais mobile mais conhecidos são:\pause
+        \begin{itemize}
+            \item<1-> {Palm OS} \pause
+            \item<2-> {Windows Embedded}\pause
+            \item<3-> {Windows Mobile}
+        \end{itemize}
+        \end{frame}
+        %---------------------------------------------------------
+    
+        \begin{frame}
+        \frametitle{Programas utilitários}
+        Programas utilitarios auxiliam na manutenção e correção de problemas nos computadores.\pause
+        \begin{itemize}
+            \item<1-> {Utilitários de Hardware}\pause
+            \item<2-> {Utilitários de segurança}\pause
+            \item<3-> {Utilitários de compactação de arquivos }\pause
+            \item<4-> {Utilitários para bloquear spam e pop-ups}\pause
+            \item<5-> {Utilitários para rede e internet}\pause
+            \item<6-> {Utilitários de servidor e computador mainframe}\pause
+            \item<7-> {Outros utilitários}
+        \end{itemize}
+    
+        \end{frame}
+        %---------------------------------------------------------
+        \begin{frame}
+        \frametitle{Middleware}
+            É um software que permite a comunicação entre diferentes sistemas e que eles troquem dados.
+        \end{frame}
+        %--------------------------------------------------------
+        \section{SOFTWARE DE APLICAÇÃO}
+        %---------------------------------------------------------
+    
+        \begin{frame}
+        \frametitle{Visão geral do software de aplicação}
+        Software proprietário e software off-the-shelf são tipos importantes de software de aplicação.
+        \end{frame}
+        %---------------------------------------------------------
+    
+        \begin{frame}
+        \frametitle{Softwares de aplicação pessoal}
+            Este tipo de software inclui ferramentas e os programas de utilização geral que atendem as necessidades individuais.\pause
+        \begin{itemize}
+            \item<1-> {Processador de texto}\pause
+            \item<2-> {Planilha}\pause
+            \item<3-> {Banco de dados }\pause
+            \item<4-> {Gráficos}\pause
+            \item<5-> {Gerenciamento de projeto}\pause
+            \item<6-> {Gerenciamento financeiro}\pause
+            \item<7-> {Editoração eletrônica(DTP - Desktop Publishing)}\pause
+            \item<8-> {Criatividade}
+        \end{itemize}
+        \end{frame}
+        %---------------------------------------------------------
+    
+        \begin{frame}
+        \frametitle{Aplicativos para grupos de trabalho}
+            São projetados para dar suporte ao trabalho em grupo, estejam as pessoas no mesmo local ou distantes.
+    
+        \end{frame}
+        %---------------------------------------------------------
+    
+        \begin{frame}
+        \frametitle{Software de aplicação para empresas}
+        São softwares que beneficiam uma organização inteira.\pause
+    \begin{itemize}
+            \item<1-> {Contas a receber e a pagar}\pause
+            \item<2-> {Controle de estoque}\pause
+            \item<3-> {Operações de transportes aéreos }\pause
+            \item<4-> {Sistemas de caixa eletrônico automático}\pause
+            \item<5-> {Análise do fluxo de caixa}\pause
+            \item<6-> {Controle da produção e distribuição}\pause
+            \item<7-> {Livro-caixa}\pause
+            \item<8-> {Depósitos e investimentos}
+        \end{itemize}
+    
+    
+        \end{frame}
+    
+        %---------------------------------------------------------
+    
+    
+        \begin{frame}
+        \frametitle{Software de aplicação para informação, apoio à decisão e propósitos especializados}
+            Por exemplo, utiliza-se software para analisar o genoma humano;\\
+            Empresas de musica utilizam software para descobrir a proxima canção de sucesso;\\
+            Softwares que aumentam o índice de cura do câncer;
+    
+        \end{frame}
+        %---------------------------------------------------------
+    
+       
+        %---------------------------------------------------------
+        \section{LINGUAGENS DE PROGRAMAÇÃO}
+        %---------------------------------------------------------
+        \begin{frame}
+        A evolução das linguagens de programação é discutida em termos de gerações de linguagens.\pause
+        \frametitle{A evolução das linguagens de programação}
+        \begin{itemize}
+            \item<1-> {Primeira geração: Linguagem de máquina}\pause
+            \item<2-> {Segunda geração: Linguagem de montagem}\pause
+            \item<3-> {Terceira geração: Linguagem de alto nível}\pause
+            \item<4-> {Quarta geração: Linguagens de dúvida e banco de dados}\pause
+            \item<5-> {Além da quarta geração: Linguagens naturais e inteligentes}\pause
+            \item<6-> {Tipos de linguagem de programação}
+        \end{itemize}
+        \end{frame}
+        %---------------------------------------------------------
+    
+    
+        \section{TENDÊNCIAS E QUESTÕES DE SOFTWARE}
+    
+        %---------------------------------------------------------
+        \begin{frame}
+        \frametitle{Bug de software}
+        Um bug de software é um defeito em um programa de computador que o impede de funcionar da forma como foi projetado.
+        \end{frame}
+        %---------------------------------------------------------
+        \begin{frame}
+        \frametitle{Direitos autorais e licenças}
+        A maioria dos produtos de software é protegida por lei.\\         Softwares podem ser fornecidos para uso integral ou parcial.\\
+        Licenças :\pause
+        \begin{itemize}
+            \item<1-> {Licença para um único usuário}\pause
+            \item<1-> {Licença de múltiplos usuários}\pause
+            \item<1-> {Licença para o usuário simultâneo}\pause
+            \item<1-> {Licença de site}
+        \end{itemize}
+    
+        \end{frame}
+        %---------------------------------------------------------
+        \begin{frame}
+        \frametitle{Software de código aberto}
+        Softwares de código aberto(open source) encontram-se disponíveis gratuitamente para qualquer pessoa e pode ser facilmente modificado utilizando o codigo fonte.
+        \end{frame}
+        %---------------------------------------------------------
+        \begin{frame}
+        \frametitle{Shareware, freeware, software de domínio publico}
+        São softwares que são muito baratos ou gratuitos, normalmente para uso pessoal mas cujo código-fonte não pode ser alterado.
+        \end{frame}
+        %---------------------------------------------------------
+        \begin{frame}
+        \frametitle{Atualizações de software}
+        As empresas de software revisam os programas e vendem novas versões.\\
+    Atualizações de software custam muito menos do que o preço de aquisição do original.
+        \end{frame}
+        %---------------------------------------------------------
+        \begin{frame}
+        \frametitle{Suporte goblal de software}
+        Operações de suporte local são um dos maiores desafios que enfrentam as equipes de SI. Uma abordagem bem aceita na América do Norte é terceirizar o suporte para um ou mais distribuidores
+        \end{frame}
+        %---------------------------------------------------------
+    
+        \section{ESTUDOS DE CASO}
+        %---------------------------------------------------------
+    
+    
+        \begin{frame}
+        \frametitle{SOFTWARE DE GERENCIAMENTO DE SISTEMAS AJUDA A COMBATER O CRIME}
+        A Policia de York no norte do Canadá era obrigada a pegar todos os 200 notebooks da frota para atualizar e corrigir o sistema periodicamente demandando tempo tanto dos policiais quanto do pessoal da TI que eram pressionados e sobrecarregados.\\
+        Decidiram trocar o sistema para um software de gerenciamento da Microsoft o system center configuration manager 2007. O novo sistema permite que os membros da TI possam ter acesso remotamente as maquinas e mantenham os pcs atualizados conforme as necessidades.
+    
+        \end{frame}
+    
+        %---------------------------------------------------------
+        \begin{frame}
+        \frametitle{A gigante Valero Energy volta-se para o software SOA}
+    
+        A Valero Energy comprou muitas refinarias concorrentes em um curto periodo de tempo triplicando seu lucro anual para 90 milhões. O crescimento absurdo agradou os acionistas, porém sobrecarregou os profissionais da área de gerenciamento de sistemas. \\Para resolver este problema, a Valero Energy utilizou a arquitetura orientada ao serviço (SAO) visando interface e usabilidade, visto que as refinarias adquiridas possuiam sistemas diferentes que dificultavam a integração de seus serviços.
+        \end{frame}
+        \end{document}
