@@ -1,0 +1,136 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+
+\usepackage{graphicx,url}
+
+\usepackage[brazil]{babel}   
+%\usepackage[latin1]{inputenc}  
+\usepackage[utf8]{inputenc}  
+% UTF-8 encoding is recommended by ShareLaTex
+
+     
+\sloppy
+
+\title{Trabalho 1 de Fundamentos de Sistemas de Informação}
+
+\author{Filipe Camuso }
+
+
+\address{Universidade Federal do Mato Grosso do Sul - Campus Pantanal
+  (UFMS-CPAN)\\
+  \email{pippocamuso@hotmail.com}
+}
+
+\begin{document} 
+
+\maketitle
+\section{O que é um sistema de informação com base em computador? Quais seus componentes?} 
+
+ Computer-based information system(CBIS) é uma junção de hardware, software, banco de dados, telecomunicações, pessoas e procedimentos que coleta, manipula, armazena e processa informações.Onde:\\
+ -Hardware: É um equipamento que realiza as atividades de processamento, entrada e saida de dados e informações.\\
+ -Software: São os programas que fazem o hardware funcionar e realizar as operações necessárias.\\
+ -Banco de dados: É uma coleção organizada de fatos e informações que se relacionam de alguma forma. Sendo essa uma das "peças" mais valiosas, pois possui todas as informações.\\
+ -Telecomunicações: É toda a comunicação de uma empresa, podendo utilizar de redes internas, internet, permitindo o trafégo de informações de qualquer lugar entre a empresa.\\
+ -Pessoas: Os operadores que estão trabalhando no sistema. Eles gerenciam, administram, programam, mantêm e rodam o sistema.\\
+ -Procedimentos: São as regras para utilizar o sistema de informação, isso inclui a operação, manutenção e segurança do computador.\\
+ 
+\section{Identifique as etapas no processo de desenvolvimento de sistemas e declare o objetivo de cada uma delas.} 
+
+    Investigação dos sistemas, objetivo: Compreender o problema \\
+    Análise do sistema, objetivo: Compreender a solução.\\
+    Projeto de sistemas, objetivo: Selecionar e planejar a melhor solução.\\
+    Implantação de sistemas, objetivo: Colocar a solução em ação.\\
+    Manutenção e revisão de sistemas, objetivo: Avaliar os resultados da solução.\\
+    
+\section{O que é um sistema de gerenciamento de conhecimento? Dê um exemplo.}
+
+    Um conjunto organizado de pessoas, procedimentos, softwares, banco de dados e equipamentos para criar, armazenar, compartilhar e usar o conhecimento e a experiência da organização.
+    Um sistema de gerenciamento de conhecimento pode auxiliar pegando casos que aconteceram anteriormente e comparando com atuais para decidir a melhor opção, por exemplo: a produção de soja diminuiu em tal lugar, então, é armazenado no sistema esses dados e depois é comparado para decidir se deve ou não para de comprar soja desse lugar.\\
+
+\section{Quais são alguns dos benefícios que as organizações buscam alcançar por meio do uso de sistemas de informação?} 
+
+    Um sistema de informação auxilia na tomada de decisão, modifica processos para alcançar objetivos, além de poder reduzir gastos, organizar melhor a empresa, aperfeiçoar processos, afinal o administrador ou gestor, vai ter um sistema que estará trazendo informações utéis que serão transformadas em conhecimentos para então ter uma maior estabilidade na empresa.\\
+    
+\section{Como é medido o desempenho de um sistema?} 
+
+    O desempenho pode ser medido de várias formas, o livro apresenta a eficiência e a eficácia. Mas, além disso, é necessário ter um padrão de desempenho, ou objetivo específico, pois baseado nesse padrão, pode ser analisado o nivel de desempenho de um sistema.\\
+
+\section{O que são formação em computador e formação em sistemas de informação? Por que elas são importantes?} 
+
+    A formação em computador ou formação em informática é ter o conhecimento dos sitemas e dos equipamentos de computador e da forma em que eles trabalham, enfatiza-se a parte de hardware(equipamentos e dispositivos), software(programas e instruções), banco de dados e telecomunicações.
+    A formação em sistemas de informação é mais voltado para entender como utilizar informações, além de entender sistemas e computadores, é necessario entender pessoas, entender o porquê de utilizar sitemas em negócios.
+    Possuir o conhecimento desses dois contribui bastante para o trabalho, como por exemplo identificar oportunidades para implantar sistemas de informação, também chefiar projetos de SI. Para isso, é necessario a formação nessas duas áreas.
+
+\section{O que é realimentação? Quais são as possíveis consequências da realimentação inadequada?} 
+
+A realimentação é a informação originada no sistema, que é utilizada para fazer mudanças na entrada ou nas atividades do processamento. Funciona como um feedback, se der erro ou problema, será necessario a correção desses erros. Possiveis consequências seria a geração de saídas erradas, o que poderia comprometer a empresa, afinal, a informação perderia sua confiabilidade, poderia deixar de ser uma informação completa, logo, não seria mais informações valiosas.\\
+
+\section{Descreva três aplicações da realidade virtual.} 
+
+    Utilizar como planejamento de projetos, auxiliando a Projetar e fabricar produtos, como a boeing fez com a aeronave.\\
+    Utilizar como entreterimento e propaganda como foi utilizado pela loja de varejo Saks Fifth, assim, gerando uma maior atração para o consumidor.\\
+    Utilizar como treinamento, como exemplo os simuladores de vôo, de carro.\\
+    
+\section{Quais são os componentes de qualquer sistema de informação?} 
+
+     Os componentes são: entrada, processamento, saída e realimentação.\\
+
+\section{Quais são os tipos mais comuns de sistemas com base em computador utilizados nas organizações de negócio de hoje? Dê um exemplo de cada.}
+
+ Sistema de processamento de transações: um sistema de reserva de hotel e pedidas de vendas\\
+ Sistema de informações gerenciais: Sistemas de controle de estoque, de planejamento, controle de produção\\
+ Sistema de apoio à decisão: Ajuda a decidir questões como, um PC mais potente deve substituir 2 mais antigos?. Esses sistemas ajudam a ter um conhecimento maior sobre as situações.\\
+ Sistema de comércio eletrônico: No e-commerce existe varios tipos de serviços por exemplo, business-to-business(B2B), business-to-consumer(B2C), lojas virtuais são um bom exemplo, business-to-government(B2G) e consumer-to-government(C2G).\\
+ 
+\section{Qual a diferença entre eficiência e eficácia?} 
+
+    Eficiência é uma medida do que é produzido pelo que é consumido, eficácia é uma medida do grau em que um sistema alcança seus objetivos. Portanto, a diferença é que a eficiência refere-se a fazer de uma maneira otimizada, seja mais rapida ou com menos gastos. E eficácia está voltado a completar as tarefas, fazendo certo e alcançando metas.
+
+\section{O que é comércio movel? Descreva como pode ser utilizado.} 
+    
+    O comercio móvel ou m-commerce são as transações feitas em qualquer lugar, a qualquer tempo, e quem garante isso é qualquer dispositivo de comunicação móvel, como celulares, tables, notebooks. Pode ser utilizado para facilitar trabalhos, por exemplo, fazer pagamento de contas, ou comprar algum produto que está distante. é como o e-commerce, mas com a possibilidade de ser feito em qualquer lugar, o que pode ser considerado uma vantagem.
+    
+\section{Identifique pelo menos seis características da informação valiosa.} 
+
+         Características das informações valiosas:\\
+        -Acessíveis: As informações devem ser acessíveis para que pessoas autorizadas possam acessar no formato e tempo certo.\\
+        -Exatas: Informações exatas são informações livres de erro.\\
+        -Completas: Possui todos os fatos importantes. Um relatório de vendas do mês que não tem algum produto que vendeu, não é completo.\\
+        -Econômicas: As informações devem ter valores que correspondam a sua produção.\\
+        -Flexiveis: Informações que podem ser utilizadas de mais de uma maneira.\\
+        -Relevantes: Uma informação sobre teclados pode não ser relevante para uma empresa de queijo. Portanto, deve haver uma relação da informação para tal empresa.\\
+        -Seguras: As informações seguras só podem ser acessadas por pessoas autorizadas.\\
+        -Simples: É ideal destacar apenas o que é importante, um excesso de informação pode causar sobrecarga e dificultar a decisão.\\
+        -Confiáveis: É importante saber de onde as informações se originam, pois muitas vezes informações podem não ser verídicas.\\
+        -Verificáveis: Uma informação verificável pode ser averiguada para decidir se é ou não confiavel.\\
+        -Apresentadas em tempo hábil: Informações devem ser acessadas quando necessário.\\
+        
+\section{Qual é a diferença entre intranet e extranet?} 
+
+    Intranet é como uma rede empresarial, uma rede interna onde só as pessoas de tal empresa pode utilizar. Geralmente uma rede local.\\
+    Extranet é como uma extensão da intranet, onde as pessoas da intranet podem acessar de outros lugares.\\
+    É mais facil controlar uma intranet do que uma extranet, pois a extranet nunca se sabe quem pode estar acessando pelo login de outra pessoa.\\
+    
+\section{Como você distinguiria dados de informações? E informações de conhecimento?} 
+    
+    Bom, dados são apenas fatos crus, ou seja, informações que por si só, não valem de muita coisa. Informação é a junção de todos esses dados que são processados e organizados de tal forma que se transforme em uma informação útil. O conhecimento é onde se compreende essas novas informações úteis e  se pensa em como utiliza-las da melhor forma possível.\\
+    
+\section{Identifique as funções de um sistema de processamento de transações.}
+
+    Uma transação é qualquer troca relacionada com negócio, como pagamento dos funcionários, vendas para consumidores ou pagamento a fornecedores. Portanto um sistema de processamneto de transação auxilia nesse processo de pagamentos, vendas, registro de compras.\\
+
+\section{O que é um sistema de informação? Quais são alguns modos em que o sistemas de informação estão mudando nossas vidas?} 
+
+    Sistema de informação é um sistema que processa dados afim de se obter informações utéis. Podendo ser manual, como desenhar gráficos para auxiliar em uma decisão, ou computadorizado, onde se tem um computador que faz a parte do processamento.\\
+    Uma palavra para representar a mudança que o sistemas de informação está trazendo para nossas vidas seria a facilidade. Hoje em dia, é muito mais facil pagar um boleto, só utilizar um dispositivo movel e ir no programa do banco do brasil. Além de facilitar em tomadas de decisões, como por exemplo decidir quais compras devem ser feitas no mês utilizando um aplicativo que armazena suas compras anteriores e seus gastos.\\
+
+
+\paragraph{Citações?\\}
+\cite{stair1998principios}\\ 
+\cite{knuth:84}\\
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}
