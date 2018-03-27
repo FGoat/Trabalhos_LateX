@@ -1,0 +1,239 @@
+\documentclass{beamer} %
+\usetheme{PaloAlto}
+\usecolortheme{orchid}
+\usepackage[brazil]{babel}
+\usepackage[utf8x]{inputenc}
+\usefonttheme{professionalfonts}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{tabulary}
+\usepackage{pgfgantt}
+\usepackage{verbatim}
+\usetikzlibrary{arrows,shapes}
+\usepackage{adjustbox}
+\usepackage{soul}
+\usepackage{listings}
+\usepackage{adjustbox}
+\setbeamertemplate{itemize item}{\color{blue}$\blacksquare$}
+\usepackage{hyperref}
+\title{Rational Unfied Process (RUP)}
+
+\title{Rational Unified Process (RUP)}
+\institute[UFMS-CPAN]{Universidade Federal de Mato Grosso do Sul - CPAN}
+\author[Filipe \and Gilvan \and Imael \and Silviane]{Filipe Camuso\and  Gilvan Félix\and  Imael Rennan\and  Silviane Brito}
+
+\date{Março de 2018}
+
+\begin{document}
+\tikzstyle{every picture}+=[remember picture]
+\lstset{language=C++}   
+\everymath{\displaystyle}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%------------------------------------------------------
+
+
+\begin{frame}{Conteúdo}
+
+
+\begin{columns}
+
+\column{1.0\textwidth}
+\begin{itemize}
+\item Introdução
+\item Perspectivas
+\item Características
+\item Fases de desenvolvimento
+\item Workflows estáticos no RUP
+\item Boas práticas
+\end{itemize}
+
+
+\end{columns}
+
+\end{frame}
+\section{Introdução}
+\begin{frame}{Introdução}
+O Rational Unified Process (RUP) é uma metodologia de desenvolvimento de processo moderno derivado sobre a UML (Unified Modeling Language) e associado ao Unified Software Developement Process.
+\end{frame}
+
+\begin{frame}{Introdução}
+A Linguagem de modelagem unificada(UML) pode ser dividida em 3 tipos:\\
+
+\begin{columns}
+
+\column{1.0\textwidth}
+\begin{itemize}
+\item UML como esboço;
+\item UML como planta;
+\item UML como linguagem de programação;
+\end{itemize}
+\end{columns}
+
+UML não é um método de desenvolvimento por si só.\\
+
+\end{frame}
+
+\section{Perspectivas}
+\begin{frame}{Perspectivas}
+O RUP é descrito em três perspectivas:
+\begin{columns}
+
+\column{1.0\textwidth} 
+\begin{itemize}
+\item Perspectiva dinâmica;
+\item Perspectiva estática;
+\item Perspectiva prática;
+\end{itemize}
+
+\end{columns}
+\end{frame}
+
+\section{Características}
+\begin{frame}{Características}
+
+\begin{columns}
+
+\column{1.0\textwidth} 
+\begin{itemize}
+\item Iterativo e Incremental;
+\item Guiado por casos de uso;
+\item Centrado na arquitetura;
+\end{itemize}
+
+\end{columns}
+\end{frame}
+
+
+\section{Fases de desenvolvimento}
+\begin{frame}{Fases de desenvolvimento}
+O RUP é constituído de 4 fases estreitamente relacionadas ao negócio. São elas:
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=9cm]{imagem.jpg} % leia abaixo
+\label{Figura:imagem}
+\end{figure}
+    
+
+
+\end{frame}
+
+\begin{frame}{Concepção}
+\begin{columns}
+\column{1.0\textwidth}
+\begin{itemize}
+\item Definição do escopo do projeto;
+\item Estabelecer um Business case;
+\item Identificar todas as entidades externas;
+\item Definir as interações;
+
+\end{itemize}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Elaboração}
+O próposito desta fase é:
+\begin{columns}
+\column{1.0\textwidth}
+\begin{itemize}
+\item Compreensão do problema dominante;
+\item Estabelecer um framework;
+\item Analisar riscos;
+
+\end{itemize}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Construção}
+A fase de construção envolve projeto, programação e testes do sistema. Na conclusão dessa fase o sistema de software deve estar funcionando e com a documentação associada pronta para ser entregue aos usuários.
+
+
+\end{frame}
+
+
+
+\begin{frame}{Transição}
+Nesta fase o sistema está pronto, começa a implantação na comunidade de usuários em ambiante real. O sistema deve estar documentado, funcionando corretamente e em seu amibiente operacional. 
+
+\end{frame}
+
+
+\begin{frame}{Fases no RUP}
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=11cm]{iteracao.jpg}
+\label{Figura:iteracao}
+\end{figure}
+    
+\end{frame}
+
+\section{Workflows estáticos no RUP}
+\begin{frame}{Workflows estáticos no RUP}
+\begin{columns}
+\column{1.0\textwidth}
+\begin{itemize}
+\item Modelagem de negócios;
+\item Requisitos;
+\item Análise e projeto;
+\item Implementação;
+\item Teste;
+\item Implantação;
+\item Gerenciamento de configuração e
+mudanças;
+\item Gerenciamento de projeto;
+\item Meio ambiente;
+\end{itemize}
+
+\end{columns}
+
+\end{frame}
+
+\section{Boas práticas}
+\begin{frame}{Boas práticas}
+O conceito de boas práticas são regras/práticas que são recomendadas para o uso no desenvolvimento de sistemas para o tornar mais eficiente e reduzir os riscos existente. As boas práticas recomendadas são:
+\end{frame}
+
+\begin{frame}{Boas práticas}
+\begin{columns}
+\column{1.0\textwidth}
+\begin{itemize}
+\item Desenvolver software iterativamente;
+\item Gerenciar os requisitos;
+\item Usar arquiteturas baseadas em componentes;
+\item Modelar o software visualmente;
+\item Verificar a qualidade de software;
+\item Controlar as mudanças do software;
+
+\end{itemize}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Referências}
+\begin{columns}
+\column{1.0\textwidth}
+\begin{itemize}
+\item Sommerville, I. (2011), Engenharia de Software, Ivan Bosnic e Kalinka G.
+de O. Gonçalves, 9. ed.
+\item John Hunt (2000). The Unified Process for Practitioners: Object-oriented Design, UML and Java. Springer, 2000.
+\item FOWLER, Martin. UML distilled: a brief guide to the standard object modeling language. Addison-Wesley Professional, 2004.
+
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\end{document}
+
+
