@@ -1,0 +1,179 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+
+\usepackage{graphicx,url}
+
+\usepackage[brazil]{babel}   
+%\usepackage[latin1]{inputenc}  
+\usepackage[utf8]{inputenc}  
+% UTF-8 encoding is recommended by ShareLaTex
+
+   
+\sloppy
+
+\title{IBM Database 2(DB2)\\ Sistema Gerenciador de Banco de Dados Relacional(SGBDR)}
+
+\author{Filipe Camuso Fernandez\inst{1} Victor Augusto Fonseca Pinto\inst{1}}
+
+\address {Universidade Federal do Mato Grosso do Sul - Campus Pantanal(UFMS-CPAN)\\ 
+  Caixa Postal 252 -- 79.304-902  -- Corumbá -- MS -- Brasil
+  \email{pippocamuso@hotmail.com\and vitao.afp@gmail.com}
+}
+
+\begin{document} 
+
+\maketitle
+  %--------------------
+\begin{abstract}
+In this paper, basic concepts about database(DB) will be presented, as well as a deepening in Db2, addressing its
+main characteristics and making an analysis in relation to other databases.
+\end{abstract}
+ %--------------------
+\begin{resumo} 
+Neste trabalho serão apresentados conceitos basicos sobre Banco de Dados(BD), além de um aprofundamento no Db2, abordando suas
+características principais e fazendo uma análise em relação a outros bancos de dados.
+\end{resumo}
+  %--------------------
+
+    \section{Introdução}
+    \subsection{Banco de Dados}
+    Atualmente, é comum estarmos sempre em contato com banco de dados, apesar de não ser algo visivel. Atividades simples como, fazer
+    depósito ou retirada de dinheiro, compras de passagem aéreas, acessar o catálogo da biblioteca, utilizar e-commerce para compra de
+    produtos, ou até mesmo compras mensais no mercado. Todas essas interações trabalham com informações, existem funções que vão
+    manipular dados resultando em alguma informação util para o usuário. Contudo, essas informações precisam ser armazenadas em algum
+    lugar, ou seja, armazenados em um banco de dados. Segundo o livro de \cite{elmasri2005sistemas} "Um banco de dados é uma coleção de dados
+    relacionados. Os dados são fatos que podem ser gravados e que possuem um significado implícito". Esta é uma definição bastante
+    genérica, portanto, é preciso lembrar de algumas propriedades chave que caracteriza um BD:
+    \begin{itemize}
+        \item{ "Um banco de dados representa alguns aspectos do mundo real, sendo chamado, às vezes, de minimundo ou de universo de
+        discurso (UoD). As mudanças no minimundo são refletidas em um banco de dados".}\cite{elmasri2005sistemas}
+        \item{ "Um banco de dados é uma coleção lógica e coerente de dados com algum significado inerente. Uma organização de dados ao
+        acaso(randômica) não pode ser corretamente interpretada como um banco de dados".}\cite{elmasri2005sistemas}
+        \item{ "Um banco de dados é projetado, construído e povoado por dados, atendendo a uma proposta específica. Possui um grupo de
+        usuários definido e algumas aplicações preconcebidas, de acordo com o interesse desse grupo de usuários".}\cite{elmasri2005sistemas}
+    \end{itemize}
+    Ou seja, um banco de dados possui um local de onde os dados são derivados, se relaciona com alguns eventos do mundo real e um público-alvo interessado em tal conteudo.
+    \subsection{Sistema Gerenciador de Banco de Dados(SGBD)}
+    Para conseguir manusear um banco de dados e mantê-lo em funcionamento, se faz necessario o uso de um sistema de gerenciamento de banco de dados, para \cite{heuser2009projeto} "Sistema de gerência de banco de dados é um software que incorpora as funções de definição, recuperação e alteração de dados em um banco de dados".\\
+    Existem vários tipos de SGBDs, entre eles temos, o Sistema Gerenciador de Banco de Dados Relacional(SGBDR), Sistema Gerenciador de Banco de Dados Orientado a Objeto(SGBDOO) e o Sistema Gerenciador de Banco de Dados Objeto-Relacional(SGBDOR).
+
+\section{Sistema Gerenciador de Banco de Dados Relacional(SGBDR)}
+    Um banco de dados relacional é um BD baseado no modelo relacional, proposto por Edgar F. Codd\cite{codd1970relational}, basicamente os dados são modelados de uma forma em que o usuario consegue visualizar através de tabelas.
+    \subsection{Modelo relacional}
+    O SGBDR é uma ferramenta que trabalha com um banco de dados digital relacional, o mesmo, utiliza os conceitos do modelo relacional, ou seja, entidade e relacionamento.\\
+    \textbf{Entidade}: "Conjunto de objetos da realidade modelada sobre os quais deseja-se manter informações no banco de dados" \cite{heuser2009projeto}\\
+    \textbf{Relacionamento}: "conjunto de associações entre entidades" \cite{heuser2009projeto}\\
+    Além desses conceitos, é importante entender que a ideia do modelo relacional é ser uma forma do usuário conseguir colocar informações dentro de um banco,como demonstrado na tabela 1 e depois, utilizando consultas, conseguir fazer alguma coisa com elas;
+        \begin{table}[ht]
+        \centering
+        \caption{Representação da tabela Estudantes utilizando o modelo relacional}
+        \label{tab:exemplo}
+        \smallskip
+        \begin{tabular}{|l|c|c|}
+        \hline
+        CPF & Acadêmico & Nota final\\[1.5ex]
+        \hline
+        &&\\[-2ex]
+        111.111.111-11 & Filipe & 8.75\\[1.5ex]
+        \hline
+        &&\\[-2ex]
+        222.222.222-22 & José & 5.78\\[1.5ex]
+        \hline
+        \end{tabular}
+        \end{table}\\
+A "common query language" é um exemplo de linguagem de consulta, com ela é possivel dar poder ao usuário sobre seu banco de dados.\\
+Exemplo de um query: SELECT * FROM Estudantes WHERE CPF = '111.111.111-11';\\
+
+\section{IBM e DB2}
+    \subsection{IBM}
+        A International Business Machines(IBM) é uma empresa muito conhecida, famosa no mundo inteiro, e com uma grande história por trás dela. Tal empresa, tem sua sede nos Estados Unidos e sua indústria é voltada para a area de hardware, software e outros serviços de Técnologia da informação(TI).\\
+        Um de seus serviços e/ou softwares é o IBM DB2.
+    \subsection{DB2}
+        IBM Db2 é um sistema de banco de dados criado para solucionar necessidades
+        corporativas. Seu diferencial esta na flexibilidade de implementação com a
+        possibilidade de armazenamento na nuvem. O IBM Db2 possui armazenamento na
+        nuvem, local ou híbrida, o que o torna mais eficiente e barato com relação aos
+        bancos de dados armazenados apenas localmente\cite{db2info}. Db2 é separado em
+        diversos produtos, todos possuem suporte ao modelo relacional, mas alguns
+        deles possuem até mesmo suporte para orientação a objetos, ou seja,
+        Objeto-Relacional.\\
+        Exemplo de plataformas que podem utilizar o DB2:\\
+        \begin{itemize}
+            \item \textbf{Linux, Unix e Windows}, informalmente conhecido como db2 LUW; 
+            \item \textbf{z/OS}, o próprio sistema operacional da IBM para mainframes;
+            \item \textbf{i}, Um sistema operacional da IBM que roda em PowerSystems;
+            \item \textbf{VSM e VM}, outro sistema operacional da IBM;
+        \end{itemize}
+        Além da possibilidade de ser utilizado em várias plataformas, existem diversas versões:\\
+        \textbf{Db2 Advanced Enterprise edition}: Inclui todos os recursos do Db2, fornece recursos avançados de análise e
+        gerenciamento de dados para cargas de trabalho transacionais e de armazenamento. Além de contar com Aceleração BLU, pureScale,
+        um conjunto de ferramentas, otimização de armazenamento, gerenciamento de carga de trabalho, compactação acionável e ingest
+        contínua de dados ajudam a garantir alto desempenho, insights acionáveis, disponibilidade contínua e
+        confiabilidade.\cite{db2AESE}
+        
+        \textbf{IBM Db2 12 for z/OS}: É um banco de dados corporativo líder para dados de missão crítica. Lida com cargas de trabalho
+        que mudam rapidamente, diversas e imprevisíveis, maximizando a utilização de recursos e o investimento. Está entre os
+        servidores de dados mais escalonáveis, confiáveis e econômicos disponíveis. Como beneficiam seu negócio:\cite{db212zos}
+    \begin{itemize}
+        \item Fornecendo análises para fornecer mais valor a seus dados corporativos;
+        \item Estendendo o suporte a dispositivos móveis e IoT para sua organização;
+        \item Fornecendo o provisionamento e o gerenciamento do IBM Cloud para reduzir a complexidade e o custo;
+    \end{itemize}
+    
+    \subsection{DB2 on cloud}
+    O armazenamento em nuvem é quando todo o armazenamento de dados é feito em um
+    servidor distante, não localizado nas proximidades do cliente local. É pratico
+    pois possibilita que empresas mantenham seus dados de maneira confiável por meio
+    de terceirização por empresas especializadas ou em locais onde a manutenção de um
+    servidor seja mais viável.\cite{veras2012cloud}
+
+\section{Características}
+
+    Afim de analisar as caracteristicas do BD, utilizaremos a versão IBM DB2 Express-C como base.
+    IBM DB2 Express-C é uma das edições do DB2 gratuita. É ideal para pequenos negócios e empresas de pequeno e médio porte. Possui suporte para Windows, Linux, Mac OS X e Unix. Além de ser facil de manusear e configurar, possui capacidade para se auto-gerenciar. \cite{db2express}
+    
+    \subsection{Tamanho}
+    O Db2 Express-C possui limitações em sua capacidade de armazenamento, apesar disso não é uma versão incompleta.\cite{sitedoido}
+    Algumas de suas limitações são:
+    \begin{itemize}
+        \item Até dois núcleos da CPU podem ser utilizados pelo Db2.
+        \item No máximo 16GB de memória RAM do computador é utilizada.
+        \item O db2 Express-C limita o armazenamento de dados em no máximo 15 Terabytes(TB).
+        \item Não possui limites de conexões ou limites de usuário de qualquer tipo.
+    \end{itemize}
+
+    \subsection{Custo}
+    
+    Apesar de ser uma versão gratuita, o Db2 Express-C possui suporte que pode ser adquirido por até US\$ 3.000 ao ano.
+    Ao adquirir suporte o usuário expande as capacidades de seu serviço, aumentando as capacidades do processador para até 4 núcleos(2 CPUs), 4gb de memória RAM adicional, além de funcionalidades como a Alta Disponibilidade e Recuperação de Desastres(High Availability and Disaster Recovery) e Replicação de SQL(SQL Replication).\cite{sitedoido}
+    
+    \subsection{Usuários}
+    O controle que o usuário possui com relação ao banco da dados é ilimitato e irrestrito, mesmo em sua versão gratuita.\cite{sitedoido}
+    
+    \subsection{Desempenho}
+    O desempenho do Db2 Express-C limita-se à relação de dados processados e à capacidade de processamento dos 2 cores da CPU. Apesar das restrições da versão, o Db2, de maneira geral, foi desenvolvido para agilizar e otimizar as ferramentas ja conhecidas para banco de dados.\cite{sitedoido}
+    \subsection{Integração}
+    O Db2 Express-C possui integração com a linguagem SQL além da linguagem XML utilizando-se da tecnologia pureXML, que permite que desenvolvedores utilizem o banco de dados com Java, .NET, Ruby, Python, Perl e qualquer linguagem de programação que possua interpretação de XML\cite{sitedoido}
+    \subsection{Fornecedor}
+    O Db2 em todas as suas versões são distribuidas pela IBM, que continua desenvolvendo e aprimorando o sistema, como com o Db2 on cloud, que possibilita que o Db2 seja implementado de maneira hibrida, não só localmente.\cite{sitedoido}
+    \subsection{ranking}
+    O Db2 esta em 5º colocado no ranking dos sistemas de banco de dados relacionais,
+    perdendo apenas para banco de dados mais tradicionais baseados em SQL\cite{rank}.
+
+    
+\section{Conclusão}
+O Db2 apesar de existir há algum tempo, continua sendo aprimorado e atualizado com
+novas tecnologias e tendencias, contudo não possui tanta fama quanto bancos de dados mais tradicionais, como Oracle, Mysql, PostgreSQL. Apesar de não dominar esta parcela de mercado, é mais versatil no quesito implementação e integração pois conta com tecnologias hibridas, o que facilita o acesso por parte de desenvolvedores e oferece melhor custo benefício.\\
+O Db2 também se destaca pela atenção a usuários que não demandam tanto do banco de
+dados, com versões gratuitas que não perdem em funcionalidade e/ou ferramentas. \\
+O desenvolvimento promissor e acompanhamento das últimas tendências tecnológicas fazem
+com que o Db2 não perca para nenhum outro sistema de banco de dados no quesito
+funcionalidade e desempenho.
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}
+
+
